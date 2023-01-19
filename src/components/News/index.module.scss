@@ -1,0 +1,147 @@
+.News {
+    font-family: Quicksand;
+    color: #474E4B;
+    padding: 90px;
+
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    &_title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+
+        h1 {
+            font-weight: 500;
+            font-size: 2.7rem;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-weight: 400;
+            letter-spacing: 6px;
+            text-underline-offset: 8px;
+            cursor: pointer;
+        }
+    }
+
+    .cards {
+        display: flex;
+        gap: 240px;
+        width: 100%;
+        overflow-x: auto;
+
+        .card {
+            margin-bottom: 48px;
+            img {
+                margin-bottom: 24px;
+                cursor: pointer;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #474e4b;
+    border: px none #ffffff;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #474e4b;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #474e4b;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  @media only screen and (max-width: 1200px){
+    .News {
+      .container {
+        max-width: 600px;
+      }
+
+      &_title {
+        
+        h1{
+          font-size: 2rem;
+        }
+
+        h2{
+          font-size: 0.75rem;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 800px){
+  .News {
+    &_title {
+      flex-direction: column;
+    }
+    .cards {
+      gap: 100px;
+      .card {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 465px){
+  .News {
+    &_title {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 0.6rem;
+        text-underline-offset: 2px;
+      }
+    }
+    .cards {
+      .card {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

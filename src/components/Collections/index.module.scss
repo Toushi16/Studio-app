@@ -1,0 +1,129 @@
+.Collections {
+    display: flex;
+        justify-content: space-evenly;
+        color: #474e4b;
+        font-family: Quicksand;
+        margin-bottom: 124px;
+        
+
+        .Collections_card {
+            text-align: center;
+
+            h1 {
+                margin-top: 50px;
+               font-weight: 500;
+               font-size: 3rem; 
+            }
+
+            h2{
+                font-weight: 400;
+                text-decoration: underline;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                text-underline-offset: 8px;
+                padding: 24px 0 48px 0;
+                cursor: pointer;
+            }
+
+            img {
+                height: 700px;
+                cursor: pointer;
+            }
+        }
+
+        .Inspirations_card {
+            padding: 36px;
+            text-align: center;
+            background-color: #E1E1DF;
+
+            img {
+                cursor: pointer;
+            }
+
+            h1 {
+                margin-top: 36px;
+                font-weight: 500;
+                font-size: 3rem; 
+             }
+ 
+             h2{
+                 font-weight: 400;
+                 text-decoration: underline;
+                 text-transform: uppercase;
+                 letter-spacing: 4px;
+                 text-underline-offset: 8px;
+                 padding: 24px 0 48px 0;
+                 cursor: pointer;
+             }
+        }
+    }
+
+@media only screen and (max-width: 1313px){
+    .Collections {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .Collections {
+        .Collections_card {
+            img {
+                max-width: 500px;
+                height: 550px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .Collections {
+        .Collections_card {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+            img {
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+        
+        .Inspirations_card {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+            img {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .Collections {
+        .Collections_card {
+            img {
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+        
+        .Inspirations_card {
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+}

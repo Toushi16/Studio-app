@@ -1,0 +1,131 @@
+.Mail {
+    height: 60vh;
+    background-color: #474E4B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Quicksand;
+
+    h1 {
+        color: white;
+        font-weight: 500;
+        font-size: 2.6rem;
+        padding-bottom: 24px;
+    }
+
+    h2 {
+        color: white;
+        font-weight: 300;
+        width: 30%;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    &_input {
+        margin-top: 36px;
+        border: 1px solid white;
+
+        input {
+            padding: 15px;
+            width: 300px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        input::placeholder {
+            color: white;
+            font-family: Quicksand;
+            font-size: 1.1rem;
+        }
+
+        button {
+            padding: 5px;
+            width: 150px;
+            background-color: transparent;
+            border: none;
+            border-left: 1px solid white;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+    }
+
+    &_info {
+        display: flex;
+        gap: 8px;
+        padding-top: 24px;
+
+        p {
+            color: white;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .Mail {
+        h2 {
+            width: 50%;
+        }
+
+        &_info {
+            scale: 0.75;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 463px){
+    .Mail {
+        &_input {
+            width: 90%;
+
+            input {
+                width: 250px;
+            }
+        }
+
+        h2 {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 447px){
+    .Mail {
+        &_input {
+            input {
+                width: 50%;
+            }
+
+            button {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .Mail {
+        h1 {
+            text-align: center;
+        }
+
+        &_input {
+            input {
+                width: 60%;
+            }
+            button {
+                width: 20%;
+            }
+        }
+    }
+}
